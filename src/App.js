@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
+import Home from './pages/Home';
 
 const { Header, Footer, Content } = Layout;
 
@@ -9,7 +10,9 @@ function App() {
       <Layout style={{minHeight: "100vh"}}>
         <Header>Header</Header>
         <Layout>
-          <Content style={{ margin: "16px 16px 0 16px"}}>Content</Content>
+          <Content style={{ margin: "16px 16px 0 16px"}}>
+            <Home />
+          </Content>
         </Layout>
         <Footer>Footer</Footer>
       </Layout>
