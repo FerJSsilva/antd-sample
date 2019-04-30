@@ -19,6 +19,14 @@ class Home extends Component {
         });
     }
 
+    remove = (ItemName) => {
+        const newList = this.state.itemList.filter((item) => { return item !==  ItemName })
+        console.log(ItemName, newList);
+        this.setState({
+            itemList: newList,
+        })
+    }
+
     render() {
         console.log(this.state);
         return (
@@ -30,7 +38,7 @@ class Home extends Component {
                     onChange={this.onChange}
                 />
                 <Button onClick={() => { this.onSubmit() }}>Submit</Button>
-                <List items={this.state.itemList} />
+                <List items={this.state.itemList} removeItem={this.remove} />
             </div>
         );
     }
