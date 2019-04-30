@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, Button } from 'antd';
-import Todo from '../shared/Todo';
+import { Row, Col, Card } from 'antd';
+import Todo from '../shared/todo/Todo';
 
 class Home extends Component {
     render() {
@@ -13,7 +13,6 @@ class Home extends Component {
                                 title="Todo List"
                                 bordered={false}
                                 style={{ marginBottom: "16px"}}
-                                extra={<Button type="primary">Add</Button>}
                             >
                                 <Todo />
                             </Card>
