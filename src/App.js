@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Layout, Col } from 'antd';
 import Home from './pages/Home';
 
 const { Header, Footer, Content } = Layout;
@@ -7,14 +7,20 @@ const { Header, Footer, Content } = Layout;
 function App() {
   return (
     <div>
-      <Layout style={{minHeight: "100vh"}}>
+      <Layout style={{ minHeight: "100vh" }}>
         <Header>Header</Header>
         <Layout>
-          <Content style={{ margin: "16px 16px 0 16px"}}>
+          <Content style={{ margin: "16px 16px 0 16px" }}>
             <Home />
           </Content>
         </Layout>
-        <Footer>Footer</Footer>
+        <Footer>
+          <Col span={24} style={{ textAlign: 'center' }}>
+            React Course Monitora
+            <br />
+            version 0.1
+          </Col>
+        </Footer>
       </Layout>
     </div>
   );
