@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col, Card } from 'antd';
 
 class Home extends Component {
     render() {
@@ -7,16 +7,40 @@ class Home extends Component {
             <div>
                 <Row gutter={16}>
                     <Col span={6}>
-                        <div style={{backgroundColor: "green"}}>col-6</div>
+                        <div>
+                            <Card title="Card title" bordered={false} style={{ width: 300 }}>
+                                <p>Card content</p>
+                                <p>Card content</p>
+                                <p>Card content</p>
+                            </Card>
+                        </div>
                     </Col>
                     <Col span={6}>
-                        <div style={{backgroundColor: "green"}}>col-6</div>
+                        <div>
+                            <Card title="Card title" bordered={false} style={{ width: 300 }}>
+                                <p>Card content</p>
+                                <p>Card content</p>
+                                <p>Card content</p>
+                            </Card>
+                        </div>
                     </Col>
                     <Col span={6}>
-                        <div style={{backgroundColor: "green"}}>col-6</div>
+                        <div>
+                            <Card title="Card title" bordered={false} style={{ width: 300 }}>
+                                <p>Card content</p>
+                                <p>Card content</p>
+                                <p>Card content</p>
+                            </Card>
+                        </div>
                     </Col>
                     <Col span={6}>
-                        <div style={{backgroundColor: "green"}}>col-6</div>
+                        <div>
+                            <Card title="Card title" bordered={false} style={{ width: 300 }}>
+                                <p>Card content</p>
+                                <p>Card content</p>
+                                <p>Card content</p>
+                            </Card>
+                        </div>
                     </Col>
                 </Row>
             </div>
